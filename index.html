@@ -2,37 +2,42 @@
 <html>
 <head>
 <style>
-.flex-container {
-    height: 400px;
-  display: flex;
-  flex-direction: row;
-  background-color: green;
-  justify-content: center; /* for left to eight changes*/.
-  align-items: ;
-
+.flex-container{
+    height: 100px;
+    display: flex;
+background-color: greenyellow;
+flex-direction: row;
+justify-content: right;
 }
 
-.flex-item {
-  background-color: yellow;
+.flex-container > div {
+  background-color: #f1f1f1;
   width: 100px;
   margin: 10px;
   text-align: center;
   line-height: 75px;
-
-  margin-top: auto;
   font-size: 30px;
 }
+
+
+
 </style>
 </head>
 <body>
 
 
-
 <div class="flex-container">
-  <div class="flex-item"><details>first flex item</details></div>
-  <div class="flex-item"><details> second flex item</details></div>
-  <div class="flex-item"><details>third flex item</details></div>  
+    <div style="flex-grow: 5;" >home</div>
+<div>home</div>
+<div>contact</div>
+<div>services</div>
+<div>Apply</div>
+<div>Feeback</div>
+
 </div>
+
+
+
 
 </body>
 </html>
