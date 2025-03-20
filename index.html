@@ -1,41 +1,47 @@
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <style>
-.flex-container{
-    height: 100px;
-    display: flex;
-background-color: greenyellow;
-flex-direction: row;
-justify-content: right;
-}
+.grid {
+  display: grid;
+ row-gap: 50px;
+ column-gap: 50px;
+  grid-template-columns: auto auto;
 
-.flex-container > div {
   background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
 }
 
-
-
+.grid> div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  text-align: end;
+  line-height: 25px;
+  font-size: 20px;
+}
+.item1{
+    grid-column: 1 / span ;
+}
 </style>
 </head>
 <body>
 
 
-<div class="flex-container">
-    <div style="flex-grow: 5;" >home</div>
-<div>home</div>
-<div>contact</div>
-<div>services</div>
-<div>Apply</div>
-<div>Feeback</div>
 
+<div class="grid">
+  <div class="item1">Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.</div>
+  <div >Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.</div>
+  <div>Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.</div>
+  <div>Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.</div>
+  <div>Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.</div>
+  <div>Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.</div>
+  
 </div>
-
 
 
 
